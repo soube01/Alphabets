@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabets</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            /* background: linear-gradient(red,black); */
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+        }
+        .main{
+            width: 40%;
+             
+            /* border: 3px solid ; */
+            position: absolute;
+            left: 50%;
+            top: 14%;
+            /* background:radial-gradient(beige,green); */
+            /* background-image: url('bg.jpg'); */
+        
+        }
+        #box1{
+            width: 50%;
+            height: 300px;
+            border: 3px solid darkblue;
+            margin-left: 25%;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: 100% 100%;
+            
+        }
+        #box2{
+            width: 50%;
+            height: 30px;
+            border: 3px solid blue;
+            margin-top: 10px;
+            margin-left: 25%;
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(blue,black);
+        }
+.heading{
+    
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    text-align: center;
+}
+input {
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+button{
+        background: linear-gradient(rgb(224, 48, 48), black);
+        color: white;
+        font-size: large;
+}
+button:hover{
+    font-size: larger;
+    color: yellow;
+}
+span{
+    font-size: 25px;
+    color:darkblue;
+}
+@media screen and (max-width: 1100px) 
+{
+   .heading{
+     display: flex;
+     flex-direction: column;
+   }
+    #box1{
+        
+        height: 200px;
+        display: flex;
+        background-size: 100% 100%;
+    }
+} 
+    </style>
+    <script>
+        function alpha(){
+            var val=document.getElementById("enter").value
+            if(val=="a" || val=="A"){
+                var audio =new Audio('aud.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="A for Apple.";
+                document.getElementById("box1").style.backgroundImage="url('apple.png')";
+                
+            }
+            else if(val=="b" || val=="B"){ 
+                var audio =new Audio('ball.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="B for Ball.";
+                document.getElementById("box1").style.backgroundImage="url('ball.jpeg')";
+            }
+            else if(val=="c" || val=="C"){ 
+                var audio =new Audio('computer.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="C for Computer.";
+                document.getElementById("box1").style.backgroundImage="url('computer.jpg')";
+            }
+            else if(val=="d" || val=="D"){
+                var audio =new Audio('drum.mp3');
+                audio.play(); 
+                document.getElementById("box2").innerHTML="D for Drum.";
+                document.getElementById("box1").style.backgroundImage="url('drum.png')";
+            }
+            else if(val=="e" || val=="E"){ 
+                var audio =new Audio('egg.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="E for Egg.";
+                document.getElementById("box1").style.backgroundImage="url('egg.jpg')";
+            }
+            else if(val=="f" || val=="F"){ 
+                var audio =new Audio('fish.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="F for Fish";
+                document.getElementById("box1").style.backgroundImage="url('fish.jpeg')";
+            }
+            else if(val=="g" || val=="G"){ 
+                var audio =new Audio('gun.mp3');
+                audio.play();
+                var audio =new Audio('shotgun.mp3');
+                audio.play();
+                
+                document.getElementById("box2").innerHTML="G for  Gun.";
+                document.getElementById("box1").style.backgroundImage="url('gun.jpg')";
+            }
+            else if(val=="h" || val=="H"){ 
+                var audio =new Audio('hat.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="H for Hat.";
+                document.getElementById("box1").style.backgroundImage="url('hat.jpg')";
+            }
+            else if(val=="i" || val=="I"){ 
+                var audio =new Audio('india.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="I for India.";
+                document.getElementById("box1").style.backgroundImage="url('india.jpg')";
+            }
+            else if(val=="j" || val=="J"){ 
+                var audio =new Audio('jug.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="J for Jug.";
+                document.getElementById("box1").style.backgroundImage="url('jug.png')";
+            }
+            else if(val=="k" || val=="K"){ 
+                var audio =new Audio('kite.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="K for Kite.";
+                document.getElementById("box1").style.backgroundImage="url('kite.jpeg')";
+
+            }
+            else if(val=="l" || val=="L"){ 
+                var audio =new Audio('leo.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="L for Leo.";
+                document.getElementById("box1").style.backgroundImage="url('leo.jpg')";
+            }
+            else if(val=="m" || val=="M"){
+                var audio =new Audio('mango.mp3');
+                audio.play(); 
+                document.getElementById("box2").innerHTML="M for Mango.";
+                document.getElementById("box1").style.backgroundImage="url('mango.jpg')";
+            }
+            else if(val=="n" || val=="N"){ 
+                var audio =new Audio('nest.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="N for Nest.";
+                document.getElementById("box1").style.backgroundImage="url('nest.jpg')";
+            }
+            else if(val=="o" || val=="O"){ 
+                var audio =new Audio('orange.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="O for Orange.";
+                document.getElementById("box1").style.backgroundImage="url('orange.jpg')";
+            }
+            else if(val=="p" || val=="P"){ 
+                var audio =new Audio('peacock.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="P for Peacock.";
+                document.getElementById("box1").style.backgroundImage="url('peacock.jpg')";
+            }
+            else if(val=="q" || val=="Q"){ 
+                var audio =new Audio('queen.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="Q for Queen.";
+                document.getElementById("box1").style.backgroundImage="url('queen.jpg')";
+            }
+            else if(val=="r" || val=="R"){ 
+                var audio =new Audio('rose.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="R for Rose.";
+                document.getElementById("box1").style.backgroundImage="url('rose.jpeg')";
+            }
+            else if(val=="s" || val=="S"){ 
+                var audio =new Audio('sun.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="S for Sun.";
+                document.getElementById("box1").style.backgroundImage="url('sun.png')";
+            }
+            else if(val=="t" || val=="T"){ 
+                var audio =new Audio('tree.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="T for Tree.";
+                document.getElementById("box1").style.backgroundImage="url('tree.png')";
+            }
+            else if(val=="u" || val=="U"){ 
+                var audio =new Audio('umbrella.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="U for Umbrella.";
+                document.getElementById("box1").style.backgroundImage="url('umbrella.png')";
+            }
+            else if(val=="v" || val=="V"){ 
+                var audio =new Audio('van.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="V for Van.";
+                document.getElementById("box1").style.backgroundImage="url('van.jpg')";
+            }
+            else if(val=="w" || val=="W"){ 
+                var audio =new Audio('watch.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="W for Watch.";
+                document.getElementById("box1").style.backgroundImage="url('watch.jpg')";
+            }
+            else if(val=="x" || val=="X"){ 
+                var audio =new Audio('xmas.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="X for Xmas.";
+                document.getElementById("box1").style.backgroundImage="url('xmas.png')";
+            }
+            else if(val=="y" || val=="Y"){ 
+                var audio =new Audio('yoyo.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="Y for Yo-Yo.";
+                document.getElementById("box1").style.backgroundImage="url('yoyo.gif')";
+            }
+            else if(val=="z" || val=="Z"){ 
+                var audio =new Audio('zebra.mp3');
+                audio.play();
+                document.getElementById("box2").innerHTML="Z for Zebra.";
+                document.getElementById("box1").style.backgroundImage="url('zebra.jpg')";
+            }
+            else{
+                document.getElementById("box2").innerHTML="Wrong Input.";
+                document.getElementById("box1").innerHTML="Failed To Load.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><span>Enter Any Alphabet:</span> <br>
+     <input type="text" id="enter" placeholder="Enter Between A To Z ... "> <br>
+     <button id="btn" onclick="alpha()">Submit</button>
+     </div>
+        <div class="main">
+            <div id="box1"></div>
+        <div id="box2"></div>
+        </div>
+     </div>
+</body>
+</html>
